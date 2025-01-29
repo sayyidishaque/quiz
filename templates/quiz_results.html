@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Results</title>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <p>Your score: {{ score }} out of {{ total_questions }}</p>
+    <p>Percentage: {{ percentage_score|floatformat:2 }}%</p>
+    <a href="{% url 'index' %}">Return to Home</a>
+</body>
+</html>
